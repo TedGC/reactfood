@@ -1,5 +1,5 @@
 import { useState, createContext } from 'react'
-import { CartContextProvider } from './cartContext'
+
 
 
 const ProgressContext = createContext({
@@ -41,9 +41,9 @@ export function ProgrssContextProvider({ children }) {
     }
     return (
 
-        <CartContextProvider value={progressCtx}>
+        <ProgrssContextProvider value={progressCtx}>
             {children}
-        </CartContextProvider>
+        </ProgrssContextProvider>
     )
 }
 
