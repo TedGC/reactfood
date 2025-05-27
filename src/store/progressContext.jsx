@@ -11,7 +11,7 @@ const ProgressContext = createContext({
 })
 
 
-export function ProgrssContextProvider({ children }) {
+export function ProgressContextProvider({ children }) {
 
     const [userProgress, setUserProgress] = useState('')
 
@@ -41,9 +41,9 @@ export function ProgrssContextProvider({ children }) {
     }
     return (
 
-        <ProgrssContextProvider value={progressCtx}>
+        <ProgressContextProvider value={progressCtx}>
             {children}
-        </ProgrssContextProvider>
+        </ProgressContextProvider>
     )
 }
 
