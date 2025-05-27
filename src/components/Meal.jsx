@@ -1,5 +1,5 @@
 import MealItem from './MealItem.jsx';
-import useHttp from '../hooks/useHttp.js';
+import useHttp from '../hooks/useHttp.jsx';
 import Error from './Error.jsx';
 
 const requestConfig = {};
