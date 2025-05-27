@@ -1,4 +1,5 @@
 import { useState, createContext } from 'react'
+import { CartContextProvider } from './cartContext'
 
 
 const ProgressContext = createContext({
@@ -22,11 +23,29 @@ export function ProgrssContextProvider({ children }) {
         setUserProgress('')
     }
 
-    function 
+    function showCheckout() {
+        setUserProgress('checkout')
+    }
+
+    function hideCheckout() {
+        setUserProgress('')
+    }
+
+
+    const progressCtx = {
+        progress: userProgress,
+        showCart,
+        hideCart,
+        showCheckout,
+        hideCheckout
+    }
+    return (
+
+        <CartContextProvider value={progressCtx}>
+            {children}
+        </CartContextProvider>
+    )
 }
-
-
-
 
 
 export default ProgressContext
