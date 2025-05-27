@@ -1,22 +1,22 @@
-import
+import CartContext from "./store/cartContext";
 
 
 
 
 
 
-  function App() {
+function App() {
 
-    return (
+  return (
 
-      <ProgressContextProvider>
-        <CartContextProvider>
-          <Header />
-          <Cart />
-          <Meal />
-        </CartContextProvider>
-      </ProgressContextProvider>
-    )
-  }
+    <ProgressContextProvider>
+      <CartContextProvider>
+        <Header />
+        <Cart />
+        <Meal />
+      </CartContextProvider>
+    </ProgressContextProvider>
+  )
+}
 
 export default App;
