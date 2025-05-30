@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import bodyParser from 'body-parser';
 import express from 'express';
 
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -67,3 +68,22 @@ app.use((req, res) => {
 });
 
 app.listen(3000);
+
+
+/**
+ * 
+ * the first thing to connect my project to github
+ * 1. create a repo in github
+ * 2. type in "git init"
+ * 3. see if it is connected, if not, try "git remote add origin "https://github.com/TedGC/projectname.git""
+ * 4. if there is no login has been done, do "git config user.name "TedGC "
+ * 5. do the same for the password "git config user.email "rhkdktn2056@gmail.com"
+ * 6. type in "git remote- v"
+ * 7. check if it is connected, and do "git push -u origin main "
+ * 8. if git is running crazy and configured in the wrong way, within the file selected for the project
+ * 9. do "rm -rf git "
+ * 
+ * 
+ * 
+ * 
+ */
