@@ -2,7 +2,7 @@ import { CartContextProvider } from "./store/cartContext.jsx";
 import { ProgressContextProvider } from "./store/progressContext.jsx";
 import Header from './components/Header.jsx'
 import Cart from './components/Cart.jsx'
-import Meal from './components/Meal.jsx'
+import Meal from './components/Meals.jsx'
 
 
 
