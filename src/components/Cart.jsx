@@ -57,34 +57,6 @@ export default function Cart() {
 }
 
 
-///redux 
-
-const cartReducer = createReducer({
-    name: 'cart',
-    initialState: {},
-    reducers: {
-        replaceCar(state, action) {
-            state.items = action.payload.items;
-            state.totalQuantity = action.paylod.totalQuantity
-        },
-        addItem(state, action) {
-            const existingITem = state.items.find((item) => item.id === action.paylod.id)
-            const newItem = action.payload
-
-            if (!existingITem) {
-                existingITem.push({
-                    price: newItem.price``
-                })
-            }
-            else {
-                existingITem.quantity++
-                existingITem.totalPRice = existingITem.price + new
-            }
-        }
-    }
-})
 
 
-const cartAction = cartReducer.actions
 
-export default carReducer 
